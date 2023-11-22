@@ -30,5 +30,15 @@ public class Main {
         stack.push(400);
 
         stack.printStack(); //[10 20 30 400]
+
+        stack.push(500);
+
+        stack.printStack(); //[10 20 30 400 500]
+
+        stack.push(600);    //Stack is full
+        stack.printStack(); //
+
+        stack.push(700);    //Stack is full
+        stack.printStack(); //
     }
 }
