@@ -24,5 +24,11 @@ public class Main {
 
         System.out.println("Pop: " + stack.pop());  //50
         System.out.println("Pop: " + stack.pop());  //40
+
+        stack.printStack(); //[10 20 30]
+
+        stack.push(400);
+
+        stack.printStack(); //[10 20 30 400]
     }
 }

@@ -25,4 +25,12 @@ public class Stack {
     public int pop() {
         return elementData[top--];
     }
+
+    public void printStack() {
+        System.out.print("[");
+        for (int i = 0; i <= top; i++) {
+            System.out.print(elementData[i] + ", ");
+        }
+        System.out.println("\b\b]");
+    }
 }
