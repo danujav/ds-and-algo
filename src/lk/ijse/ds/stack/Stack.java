@@ -21,4 +21,8 @@ public class Stack {
     public int peek() { //top
         return elementData[top];
     }
+
+    public int pop() {
+        return elementData[top--];
+    }
 }

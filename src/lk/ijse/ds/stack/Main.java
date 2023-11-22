@@ -21,5 +21,8 @@ public class Main {
 
         stack.push(50);
         System.out.println("Peek: " + stack.peek());
+
+        System.out.println("Pop: " + stack.pop());  //50
+        System.out.println("Pop: " + stack.pop());  //40
     }
 }
