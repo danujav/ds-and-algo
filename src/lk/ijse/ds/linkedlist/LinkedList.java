@@ -109,4 +109,28 @@ public class LinkedList {
         }
         temp.next = temp.next.next;
     }
+
+    public int size() {
+        int count = 0;
+
+        Node temp = head;
+        while(temp != null) {
+            count++;
+            temp = temp.next;
+        }
+        return count;
+    }
+
+    public int get(int position) {
+        if(head == null) {
+            System.err.println("List is empty");
+            return -1;
+        }
+
+        Node temp = head;
+        for (int i = 0; i < position; i++) {
+            temp = temp.next;
+        }
+        return temp.data;
+    }
 }

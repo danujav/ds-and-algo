@@ -33,6 +33,10 @@ public class Main {
 
         ll.deleteAtPosition(2);
 
-        ll.traverse(); //[20, 50, 500[
+        ll.traverse(); //[20, 50, 500]
+
+        System.out.println("size: " + ll.size());  //3
+
+        System.out.println("get(2): " + ll.get(2));  //500
     }
 }
