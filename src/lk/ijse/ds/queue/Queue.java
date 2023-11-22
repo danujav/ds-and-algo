@@ -30,4 +30,16 @@ public class Queue {
     public int peek() { //first
         return elementData[front];
     }
+
+    public int size() {
+        return rear - front + 1;
+    }
+
+    public void printQueue() {
+        System.out.print("[");
+        for (int i = front; i <= rear; i++) {
+            System.out.print(elementData[i] + ", ");
+        }
+        System.out.println("\b\b]");
+    }
 }

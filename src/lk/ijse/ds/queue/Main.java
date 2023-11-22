@@ -12,9 +12,20 @@ public class Main {
         queue.enQueue(20);
         queue.enQueue(30);
 
+        System.out.println("size: " + queue.size()); //3
+
         queue.deQueue();
 
+        System.out.println("size: " + queue.size()); //2
+
         System.out.println("Peek: " + queue.peek());
+
+        queue.printQueue();
+
+        queue.deQueue();
+
+        queue.printQueue();
+
 
     }
 }
