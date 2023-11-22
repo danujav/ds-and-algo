@@ -8,14 +8,14 @@ package lk.ijse.ds.stack;
 public class Stack {
     private int[] elementData;
     private int top;    //points to the top of the stack
-    
-    public Stack(int initialCapacity){
+
+    public Stack(int initialCapacity) {
         elementData = new int[initialCapacity];
         top = -1;
     }
-    
+
     public void push(int data) {
-        if(isFull()){
+        if (isFull()) {
             grow();
         }
         elementData[++top] = data;
@@ -26,11 +26,20 @@ public class Stack {
     }
 
     public int pop() {
+        if (isEmpty()) {
+//            throw new RuntimeException("Stack is empty");
+            System.err.println("Stack is empty");
+            return -1;
+        }
         return elementData[top--];
     }
 
-    public boolean isFull(){
+    public boolean isFull() {
         return top == elementData.length - 1;
+    }
+
+    public boolean isEmpty() {
+        return top == -1;
     }
 
     public void grow() {
