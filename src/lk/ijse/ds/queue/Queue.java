@@ -24,6 +24,10 @@ public class Queue {
     }
 
     public int deQueue() {
+        if(isEmpty()) {
+            System.err.println("Queue is empty");
+            return -1;
+        }
         return elementData[front++];
     }
 
@@ -33,6 +37,10 @@ public class Queue {
 
     public int size() {
         return rear - front + 1;
+    }
+
+    public boolean isEmpty() {
+        return front == -1;
     }
 
     public void printQueue() {
