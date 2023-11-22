@@ -18,7 +18,23 @@ public class LinkedList {
             this.data = data;
         }
     }
-    private Node head;
+    private Node head; // default value is null
 
+    public void insertAtBeginning(int data) {
+        Node node = new Node(data);
 
+        node.next = head;
+        head = node;
+    }
+
+    public void insertAtEnding(int data) {
+        Node node = new Node(data);
+
+        Node temp = head;
+        while(temp.next != null) {
+            temp = temp.next;
+        }
+
+        temp.next = node;
+    }
 }
