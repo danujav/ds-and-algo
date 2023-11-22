@@ -51,7 +51,7 @@ public class Queue {
     }
 
     public boolean isFull() {
-        return rear == elementData.length - 1;
+        return rear == elementData.length - 1 || front > rear;
     }
 
     public boolean isEmpty() {
