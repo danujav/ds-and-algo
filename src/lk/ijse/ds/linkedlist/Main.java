@@ -17,6 +17,10 @@ public class Main {
 
         ll.insertAtEnding(40);
 
-        ll.traverse();  //printList
+        ll.traverse();  //[30, 20, 10, 500, 40]
+
+        ll.insertAtPosition(50, 2);
+
+        ll.traverse();  //[30, 20, 50, 10, 500, 40]
     }
 }

@@ -43,7 +43,7 @@ public class LinkedList {
         temp.next = node;
     }
 
-    public void traverse() {
+    public void traverse() {    //printList
         Node temp = head;
 
         System.out.print("[");
@@ -53,5 +53,20 @@ public class LinkedList {
         }
 
         System.out.println("\b\b]");
+    }
+
+    public void insertAtPosition(int data, int position) { //50, 2
+        if(position == 0) {
+            insertAtBeginning(data);
+            return;
+        }
+
+        Node node = new Node(data);
+        Node temp = head;
+        for (int i = 0; i < position - 1; i++) {
+            temp = temp.next;
+        }
+        node.next = temp.next;
+        temp.next = node;
     }
 }
