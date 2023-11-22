@@ -28,6 +28,11 @@ public class LinkedList {
     }
 
     public void insertAtEnding(int data) {
+        if(head == null) {
+            insertAtBeginning(data);
+            return;
+        }
+
         Node node = new Node(data);
 
         Node temp = head;
@@ -36,5 +41,17 @@ public class LinkedList {
         }
 
         temp.next = node;
+    }
+
+    public void traverse() {
+        Node temp = head;
+
+        System.out.print("[");
+        while(temp != null) {
+            System.out.print(temp.data + ", ");
+            temp = temp.next;
+        }
+
+        System.out.println("\b\b]");
     }
 }
