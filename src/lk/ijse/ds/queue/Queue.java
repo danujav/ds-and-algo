@@ -58,7 +58,16 @@ public class Queue {
         return front == -1;
     }
 
+    public void clear() {
+        front = -1;
+        rear = -1;
+    }
+
     public void printQueue() {
+        if(isEmpty()) {
+            System.err.println("Queue is empty");
+            return;
+        }
         System.out.print("[");
         for (int i = front; i <= rear; i++) {
             System.out.print(elementData[i] + ", ");

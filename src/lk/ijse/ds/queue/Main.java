@@ -32,6 +32,9 @@ public class Main {
 
         queue.printQueue();
 
+        queue.clear();
+
+        queue.printQueue();
 
     }
 }
