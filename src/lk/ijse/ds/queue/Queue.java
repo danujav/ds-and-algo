@@ -26,4 +26,8 @@ public class Queue {
     public int deQueue() {
         return elementData[front++];
     }
+
+    public int peek() { //first
+        return elementData[front];
+    }
 }

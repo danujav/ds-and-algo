@@ -13,5 +13,8 @@ public class Main {
         queue.enQueue(30);
 
         queue.deQueue();
+
+        System.out.println("Peek: " + queue.peek());
+
     }
 }
