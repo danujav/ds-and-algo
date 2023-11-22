@@ -48,5 +48,7 @@ public class Main {
         System.out.println("Popped: " + stack.pop());
 
         System.out.println("size: " + stack.size());
+
+        stack.clear();
     }
 }
