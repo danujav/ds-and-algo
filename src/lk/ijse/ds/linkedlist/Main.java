@@ -30,5 +30,9 @@ public class Main {
         ll.deleteAtEnding();
 
         ll.traverse(); //[20, 50, 10, 500]
+
+        ll.deleteAtPosition(2);
+
+        ll.traverse(); //[20, 50, 500[
     }
 }

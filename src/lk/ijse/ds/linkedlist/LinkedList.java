@@ -91,4 +91,22 @@ public class LinkedList {
 
         temp.next = null;
     }
+
+    public void deleteAtPosition(int position) {
+        if(head == null) {
+            System.out.println("List is empty");
+            return;
+        }
+
+        if(position == 0) {
+            deleteAtBeginning();
+            return;
+        }
+
+        Node temp = head;
+        for (int i = 0; i < position - 1; i++) {
+            temp = temp.next;
+        }
+        temp.next = temp.next.next;
+    }
 }
