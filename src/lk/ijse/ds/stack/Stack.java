@@ -42,6 +42,10 @@ public class Stack {
         return top == -1;
     }
 
+    public int size() {
+        return top + 1;
+    }
+
     public void grow() {
         int[] temp = elementData;   //length -> 5
 
