@@ -22,5 +22,9 @@ public class Main {
         ll.insertAtPosition(50, 2);
 
         ll.traverse();  //[30, 20, 50, 10, 500, 40]
+
+        ll.deleteAtBeginning();
+
+        ll.traverse();  //[20, 50, 10, 500, 40]
     }
 }
